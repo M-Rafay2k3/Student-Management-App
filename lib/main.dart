@@ -1,22 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'login.dart';
-import 's_screen.dart';
+import 'package:student_management_app/SplashScreen.dart';
+import 'package:student_management_app/attendanceScreens/attendance.dart';
+import 'package:student_management_app/marksScreen/marks_screen.dart';
+import 'package:student_management_app/menuPage.dart';
+import 'package:student_management_app/studentDetailsScreens/addStudent.dart';
+import 'package:student_management_app/studentDetailsScreens/student_class.dart';
+import 'package:student_management_app/studentDetailsScreens/student_data_list.dart';
+import 'package:student_management_app/user_selection.dart';
 
-void main() => runApp(const MyApp());
-
+void main(){
+  runApp(const MyApp());
+}
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const SplashScreen(),
+      home: SplashScreen()
     );
   }
 }
